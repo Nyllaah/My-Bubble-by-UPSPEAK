@@ -1,9 +1,12 @@
-/* eslint-disable react/jsx-max-depth */
 import LoginForm from '../components/LoginForm';
 import LoginSwitch from '../components/LoginSwitch';
 import SignInForm from '../components/SignInForm';
+import styles from '../styles/Login.module.css';
 
 export default function Login() {
+  // function selectScreen(e) {
+
+  // }
   return (
     <>
       <header>
@@ -14,8 +17,10 @@ export default function Login() {
           <h1>Welcome to UPSPEAK®!</h1>
           <span>Get started in only a few minutes:</span>
         </section>
-        <SignInForm />
-        <LoginForm />
+        <section>
+          <SignInForm />
+          <LoginForm />
+        </section>
       </main>
     </>
   );

@@ -1,0 +1,31 @@
+#login-btn-bg {
+    display: flex;
+    width: 140px;
+    height: 37px;
+    align-items: center;
+    border-radius: 10px;
+    background: white;
+}
+
+#log-in-swt , #sign-in-swt {
+    width: 70px;
+    height: 37px;
+    padding: 10px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(245, 198, 32);
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+#log-in-swt.selected , #sign-in-swt.selected {
+    background-color: rgb(161, 52, 246);
+    color: white;
+}
+
+hr {
+    border-top: 1px solid white;
+    width: 100%;
+    margin-top: 8px;
+}
