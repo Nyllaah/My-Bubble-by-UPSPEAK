@@ -19,8 +19,8 @@ export default function LoginForm() {
         className="log-in-input"
         required
       />
-      <span id="forgotten-password">Forgot password?</span>
-      <Button className="loginBtn" innerText="Let’s go up!" />
+      <span className={ styles.forgottenPwd }>Forgot password?</span>
+      <Button innerText="Let’s go up!" />
     </form>
   );
 }

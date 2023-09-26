@@ -14,15 +14,10 @@ input:focus {
     outline: none;
 }
 
-.lognBtn {
-    width: 320px;
-    height: 36px;
-    border-width: 0px;
-    border-radius: 10px;
-    background-color: rgb(161, 52, 246);
-    margin-top: 35px;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
+.forgottenPwd {
+    margin-top: 0px;
+    font-weight: 500;
+    font-size: 12px;
+    align-self: flex-end;
+    color: var(--gray);
 }
