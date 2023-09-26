@@ -1,17 +1,28 @@
 import styles from '../styles/LoginSwitch.module.css';
 
-export default function LoginSwitch() {
+type LoginSwitchProps = {
+  loginScreen: boolean,
+  setLoginScreen: () => void
+};
+
+export default function LoginSwitch({ loginScreen, setLoginScreen }: LoginSwitchProps) {
+  const handleSwitch = () => {
+    setLoginScreen(!loginScreen);
+  };
+
   return (
     <>
       <div className={ styles.loginBtnBg }>
         <button
-          className={ styles.logInSwt }
+          className={ loginScreen ? styles.selected : styles.switch }
+          onClick={ handleSwitch }
         >
           Log In
 
         </button>
         <button
-          className={ `${styles.signInSwt} selected` }
+          className={ !loginScreen ? styles.selected : styles.switch }
+          onClick={ handleSwitch }
         >
           Sign In
 

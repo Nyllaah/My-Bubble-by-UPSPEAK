@@ -1,16 +1,16 @@
+import { useState } from 'react';
 import LoginForm from '../components/LoginForm';
 import LoginSwitch from '../components/LoginSwitch';
 import SignInForm from '../components/SignInForm';
 import styles from '../styles/Login.module.css';
 
 export default function Login() {
-  // function selectScreen(e) {
+  const [loginScreen, setLoginScreen] = useState(true);
 
-  // }
   return (
     <div className={ styles.container }>
       <header>
-        <LoginSwitch />
+        <LoginSwitch loginScreen={ loginScreen } setLoginScreen={ setLoginScreen } />
       </header>
       <main>
         <section className={ styles.titleContainer }>
@@ -18,8 +18,7 @@ export default function Login() {
           <span>Get started in only a few minutes:</span>
         </section>
         <section>
-          <SignInForm />
-          {/* <LoginForm /> */}
+          {loginScreen ? <LoginForm /> : <SignInForm />}
         </section>
       </main>
     </div>

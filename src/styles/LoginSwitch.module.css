@@ -7,25 +7,32 @@
     background: var(--white);
 }
 
-.logInSwt , .signInSwt {
+.switch {
     width: 70px;
     height: 37px;
     padding: 10px;
     border-style: none;
     border-radius: 10px;
-    background-color: white;
-    color: rgb(245, 198, 32);
+    background-color: var(--white);
+    color: var(--yellow);
     font-weight: 700;
     font-family: 'Inter', sans-serif;
 }
 
-#logInSwt.selected , .signInSwt.selected {
-    background-color: rgb(161, 52, 246);
-    color: white;
+.selected {
+    width: 70px;
+    height: 37px;
+    padding: 10px;
+    border-style: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--purple-400);
+    color: var(--white);
 }
 
 hr {
-    border-top: 0.125vh solid white;
+    border-top: 0.125vh solid var(--white);
     width: 100vw;
     margin-top: 1vh;
 }
