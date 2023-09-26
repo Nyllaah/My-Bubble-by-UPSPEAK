@@ -1,13 +1,15 @@
 import Input from './Input';
+import styles from '../styles/LoginForm.module.css';
+import Button from './Button';
 
 export default function LoginForm() {
   return (
-    <form id="log-in-form">
+    <form>
       <Input
         type="email"
         id="log-in-email-input"
         placeholder="Email"
-        className="log-in-input"
+        className={ styles.logInInput }
         required
       />
       <Input
@@ -18,7 +20,7 @@ export default function LoginForm() {
         required
       />
       <span id="forgotten-password">Forgot password?</span>
-      <button type="submit" id="log-in-btn">Let’s go up!</button>
+      <Button className="loginBtn" innerText="Let’s go up!" />
     </form>
   );
 }

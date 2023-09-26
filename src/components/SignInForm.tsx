@@ -1,3 +1,4 @@
+import Button from './Button';
 import Input from './Input';
 
 export default function SignInForm() {
@@ -43,7 +44,7 @@ export default function SignInForm() {
         className="sign-in-input"
         required
       />
-      <button type="submit" id="sign-in-btn">Let’s go up!</button>
+      <Button className="loginBtn" innerText="Let’s go up!" />
     </form>
   );
 }
