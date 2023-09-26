@@ -1,19 +1,17 @@
-import '../styles/LoginSwitch.css';
+import styles from '../styles/LoginSwitch.module.css';
 
 export default function LoginSwitch() {
   return (
     <>
-      <div id="login-btn-bg">
+      <div className={ styles.loginBtnBg }>
         <button
-          id="log-in-swt"
-          className="switch"
+          className={ styles.logInSwt }
         >
           Log In
 
         </button>
         <button
-          id="sign-in-swt"
-          className="switch selected"
+          className={ `${styles.signInSwt} selected` }
         >
           Sign In
 

@@ -8,12 +8,12 @@ export default function Login() {
 
   // }
   return (
-    <>
+    <div className={ styles.container }>
       <header>
         <LoginSwitch />
       </header>
       <main>
-        <section id="title-container">
+        <section className={ styles.titleContainer }>
           <h1>Welcome to UPSPEAK®!</h1>
           <span>Get started in only a few minutes:</span>
         </section>
@@ -22,6 +22,6 @@ export default function Login() {
           <LoginForm />
         </section>
       </main>
-    </>
+    </div>
   );
 }

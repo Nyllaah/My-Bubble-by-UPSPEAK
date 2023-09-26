@@ -1,13 +1,13 @@
-#login-btn-bg {
+.loginBtnBg {
     display: flex;
     width: 140px;
     height: 37px;
     align-items: center;
     border-radius: 10px;
-    background: white;
+    background: var(--white);
 }
 
-#log-in-swt , #sign-in-swt {
+.logInSwt , .signInSwt {
     width: 70px;
     height: 37px;
     padding: 10px;
@@ -19,13 +19,13 @@
     font-family: 'Inter', sans-serif;
 }
 
-#log-in-swt.selected , #sign-in-swt.selected {
+#logInSwt.selected , .signInSwt.selected {
     background-color: rgb(161, 52, 246);
     color: white;
 }
 
 hr {
-    border-top: 1px solid white;
-    width: 100%;
-    margin-top: 8px;
+    border-top: 0.125vh solid white;
+    width: 100vw;
+    margin-top: 1vh;
 }

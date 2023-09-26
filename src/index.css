@@ -1,8 +1,22 @@
 :root {
+    --gradient-bg: linear-gradient(169deg, #F5C620 38.86%, #A134F6 100%);
     --yellow: rgb(245, 198, 32);
-    --purple: rgb(161, 52, 246);
+    --purple-400: rgb(161, 52, 246);
     --white: rgb(255, 255, 255);
-    --dark-purple: rgb(88, 36, 128);
-    --light-purple: rgb(134, 85, 172);
+    --purple-700: rgb(88, 36, 128);
+    --purple-200: rgb(134, 85, 172);
     --gray: rgb(105, 105, 105);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--gray);
+    height: 100vh;
+    width: 100vw;
 }
