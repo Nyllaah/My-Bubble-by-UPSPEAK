@@ -1,6 +1,7 @@
 import Button from './Button';
 import Input from './Input';
 import styles from '../styles/SignInForm.module.css';
+import { countryCodes } from '../country-codes';
 
 export default function SignInForm() {
   return (
@@ -13,8 +14,16 @@ export default function SignInForm() {
         required
       />
       <div className={ styles.inputContainer }>
-        <select name="" id="country-codes" className="sign-in-input">
-          <option value="+55">+55</option>
+        <select name="country-code" id="counry-codes" className="sign-in-input">
+
+          {countryCodes.map((country: { code: string, name: string }) => {
+            const { code, name } = country;
+            return (
+              <optgroup key={ name } label={ name }>
+                <option value={ code }>{code}</option>
+              </optgroup>
+            );
+          })}
         </select>
         <input
           type="text"
