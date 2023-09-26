@@ -1,6 +1,6 @@
 import LoginForm from '../components/LoginForm';
 import LoginSwitch from '../components/LoginSwitch';
-// import SignInForm from '../components/SignInForm';
+import SignInForm from '../components/SignInForm';
 import styles from '../styles/Login.module.css';
 
 export default function Login() {
@@ -18,8 +18,8 @@ export default function Login() {
           <span>Get started in only a few minutes:</span>
         </section>
         <section>
-          {/* <SignInForm /> */}
-          <LoginForm />
+          <SignInForm />
+          {/* <LoginForm /> */}
         </section>
       </main>
     </div>

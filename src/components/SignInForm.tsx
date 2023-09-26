@@ -1,9 +1,10 @@
 import Button from './Button';
 import Input from './Input';
+import styles from '../styles/SignInForm.module.css';
 
 export default function SignInForm() {
   return (
-    <form id="sign-in-form">
+    <form className={ styles.form }>
       <Input
         type="text"
         id="sign-in-name-input"
@@ -11,7 +12,7 @@ export default function SignInForm() {
         className="sign-in-input"
         required
       />
-      <div className="input-container">
+      <div className={ styles.inputContainer }>
         <select name="" id="country-codes" className="sign-in-input">
           <option value="+55">+55</option>
         </select>
@@ -19,7 +20,7 @@ export default function SignInForm() {
           type="text"
           id="phone-input"
           placeholder="Phone number"
-          className="sign-in-input"
+          className={ styles.phoneInput }
           required
         />
       </div>
@@ -44,7 +45,7 @@ export default function SignInForm() {
         className="sign-in-input"
         required
       />
-      <Button className="loginBtn" innerText="Let’s go up!" />
+      <Button innerText="Let’s go up!" />
     </form>
   );
 }

@@ -1,0 +1,29 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputContainer {
+    display: flex;
+    width: 320px;
+    height: 36px;
+    padding-left: 10px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--white);
+    margin-bottom: 5px;
+}
+
+select {
+    border: none;
+    height: 30px;
+    width: 50px;
+    background: var(--white);
+}
+
+.phoneInput {
+    width: auto;
+    background: var(--white);
+    margin-left: 10px;
+}
