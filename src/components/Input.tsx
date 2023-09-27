@@ -2,7 +2,7 @@ import { InputTypes } from '../types';
 import styles from '../styles/Input.module.css';
 
 export default function Input({
-  type, id, placeholder, className, required, value, onChange }: InputTypes) {
+  type, id, placeholder, className, required, value, onChange, name }: InputTypes) {
   return (
     <div className={ styles.inputContainer }>
       <input
@@ -13,6 +13,7 @@ export default function Input({
         placeholder={ placeholder }
         className={ className }
         required={ required }
+        name={ name }
       />
     </div>
   );

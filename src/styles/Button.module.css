@@ -12,6 +12,6 @@
 }
 
 .loginBtn:disabled {
-    background-color: rgb(88, 36, 128);
+    background-color: gray;
     color: rgb(134, 85, 172);
 }
