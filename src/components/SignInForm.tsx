@@ -1,12 +1,36 @@
+import { useState } from 'react';
 import Button from './Button';
 import Input from './Input';
 import styles from '../styles/SignInForm.module.css';
 import { countryCodes } from '../country-codes';
 
 export default function SignInForm() {
+  const [formData, setFormData] = useState({
+    name: '',
+    countryCode: '',
+    phoneNumber: '',
+    email: '',
+    password: '',
+    confirmPwd: '',
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { value, name } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+  const isFormValid = () => {
+
+  };
+
+  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+  };
+
   return (
     <form className={ styles.form }>
       <Input
+        onChange={ handleChange }
+        value={ formData.name }
         type="text"
         id="sign-in-name-input"
         placeholder="Full name"
@@ -34,6 +58,8 @@ export default function SignInForm() {
         />
       </div>
       <Input
+        onChange={ handleChange }
+        value={ formData.email }
         type="email"
         id="sign-in-email-input"
         placeholder="Email"
@@ -41,6 +67,8 @@ export default function SignInForm() {
         required
       />
       <Input
+        onChange={ handleChange }
+        value={ formData.password }
         type="password"
         placeholder="Password"
         id="sign-in-password-input"
@@ -48,13 +76,15 @@ export default function SignInForm() {
         required
       />
       <Input
+        onChange={ handleChange }
+        value={ formData.confirmPwd }
         type="password"
         id="sign-in-corfirm-password-input"
         placeholder="Confirm password"
         className="sign-in-input"
         required
       />
-      <Button innerText="Let’s go up!" />
+      <Button innerText="Let’s go up!" onSubmit={ handleSubmit } />
     </form>
   );
 }

@@ -4,8 +4,11 @@ export type InputTypes = {
   placeholder: string,
   className: string,
   required: boolean,
+  value: string,
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
 };
 
 export type ButtonTypes = {
-  innerText: string
+  innerText: string,
+  onSubmit: (e: React.MouseEvent<HTMLButtonElement>) => void,
 };
