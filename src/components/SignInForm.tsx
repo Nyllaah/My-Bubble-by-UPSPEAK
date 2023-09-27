@@ -18,7 +18,9 @@ export default function SignInForm() {
     confirmPwd: '',
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLSelectElement>,
+  ) => {
     const { value, name } = e.target;
     setFormData({
       ...formData, [name]: value,
@@ -61,7 +63,7 @@ export default function SignInForm() {
           name="countryCode"
           id="country-codes"
           className="sign-in-input"
-          defaultValue="+55"
+          onChange={ handleChange }
         >
 
           {countryCodes.map((country: { code: string, name: string }) => {
