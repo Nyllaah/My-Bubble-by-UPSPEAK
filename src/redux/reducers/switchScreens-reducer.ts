@@ -5,7 +5,7 @@ export const INITIAL_STATE = {
   currScreen: 'login',
 };
 
-const initialScreenReducer = (state = INITIAL_STATE, action: AnyAction) => {
+const switchScreenReducer = (state = INITIAL_STATE, action: AnyAction) => {
   switch (action.type) {
     case SWITCH_SCREEN:
       return {
@@ -17,4 +17,4 @@ const initialScreenReducer = (state = INITIAL_STATE, action: AnyAction) => {
   }
 };
 
-export default initialScreenReducer;
+export default switchScreenReducer;
