@@ -198,7 +198,6 @@ export const countryCodes = [
   { code: '+66', name: 'Thailand' },
   { code: '+228', name: 'Togo' },
   { code: '+690', name: 'Tokelau' },
-  { code: '+690', name: 'Tokelau' },
   { code: '+676', name: 'Tonga' },
   { code: '+1868', name: 'Trinidad and Tobago' },
   { code: '+216', name: 'Tunisia' },
