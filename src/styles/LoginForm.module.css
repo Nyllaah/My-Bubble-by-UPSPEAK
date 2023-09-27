@@ -21,3 +21,20 @@ input:focus {
     align-self: flex-end;
     color: var(--gray);
 }
+
+.errorMsg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    border: solid 1px var(--red);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: justify;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--red);
+    background-color: rgb(255, 255, 255, 30%);
+    margin-top: 10px;
+}

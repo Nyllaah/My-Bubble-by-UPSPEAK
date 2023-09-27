@@ -3,8 +3,9 @@ export const users = [
     userID: 1,
     fullName: 'Ana Paula Lacerda',
     number: '1234567890',
-    email: 'nylla@gmail.com',
+    email: 'nylla.g@hotmail.com',
     password: 'senha123',
+    profileImg: 'https://avatars.githubusercontent.com/u/133919449?v=4',
   },
   {
     userID: 2,

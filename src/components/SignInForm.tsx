@@ -11,7 +11,7 @@ export default function SignInForm() {
   const [formError, setFormError] = useState<boolean>(false);
   const [formData, setFormData] = useState<FormDataTypes>({
     name: '',
-    countryCode: '+55',
+    countryCode: '',
     phoneNumber: '',
     email: '',
     password: '',
@@ -61,6 +61,7 @@ export default function SignInForm() {
           name="countryCode"
           id="country-codes"
           className="sign-in-input"
+          defaultValue="+55"
         >
 
           {countryCodes.map((country: { code: string, name: string }) => {
