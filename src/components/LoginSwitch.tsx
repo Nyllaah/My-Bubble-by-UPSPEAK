@@ -3,7 +3,7 @@ import { switchScreens } from '../redux/actions/loginActions';
 import styles from '../styles/LoginSwitch.module.css';
 
 export default function LoginSwitch() {
-  const currScreen = useSelector((state) => state.currScreen);
+  const currScreen = useSelector((state: { currScreen: string }) => state.currScreen);
   const dispatch = useDispatch();
 
   return (
