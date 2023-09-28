@@ -1,17 +1,12 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
 import Button from './Button';
 import Input from './Input';
 import styles from '../styles/SignInForm.module.css';
 import { countryCodes } from '../country-codes';
 import { FormDataTypes } from '../types';
-import { showError } from '../redux/actions/loginActions';
 
 export default function SignInForm() {
-  // const currErrorState = useSelector((state: { showError: boolean }) => state.showError);
-  // const dispatch = useDispatch();
-
   const navigate = useNavigate();
   const [formError, setFormError] = useState<boolean>(false);
   const [formData, setFormData] = useState<FormDataTypes>({
@@ -31,7 +26,6 @@ export default function SignInForm() {
       ...formData, [name]: value,
     });
     setFormError(false);
-    // dispatch(showError());
   };
 
   const isFormValid = () => {
