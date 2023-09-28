@@ -22,3 +22,9 @@ export type FormDataTypes = {
   password: string,
   confirmPwd: string,
 };
+
+export type SwitchScreenType = {
+  switchScreen: {
+    currScreen: string
+  }
+};

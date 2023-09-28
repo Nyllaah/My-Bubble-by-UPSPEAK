@@ -1,9 +1,12 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { switchScreens } from '../redux/actions/loginActions';
 import styles from '../styles/LoginSwitch.module.css';
+import { SwitchScreenType } from '../types';
 
 export default function LoginSwitch() {
-  const currScreen = useSelector((state: { currScreen: string }) => state.currScreen);
+  const currScreen = useSelector(
+    (state: SwitchScreenType) => state.switchScreen.currScreen,
+  );
   const dispatch = useDispatch();
 
   return (

@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import initialScreenReducer from './switchScreens-reducer';
+import initialScreenReducer from './switchScreensReducer';
 
 const rootReducer = combineReducers({
   initialScreen: initialScreenReducer,

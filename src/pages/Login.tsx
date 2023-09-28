@@ -3,9 +3,12 @@ import LoginForm from '../components/LoginForm';
 import LoginSwitch from '../components/LoginSwitch';
 import SignInForm from '../components/SignInForm';
 import styles from '../styles/Login.module.css';
+import { SwitchScreenType } from '../types';
 
 export default function Login() {
-  const currScreen = useSelector((state: { currScreen: string }) => state.currScreen);
+  const currScreen = useSelector(
+    (state: SwitchScreenType) => state.switchScreen.currScreen,
+  );
 
   return (
     <div className={ styles.container }>

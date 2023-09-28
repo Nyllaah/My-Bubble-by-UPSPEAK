@@ -1,9 +1,15 @@
-import { legacy_createStore as createStore } from 'redux';
+import { combineReducers, legacy_createStore as createStore } from 'redux';
 import { composeWithDevTools } from '@redux-devtools/extension';
 
-// import rootReducer from './reducers';
-import switchScreenReducer from './reducers/switchScreens-reducer';
+import switchScreenReducer from './reducers/switchScreensReducer';
+import showErrorReducer from './reducers/showErrorReducer';
 
-const store = createStore(/* rootReducer */switchScreenReducer, composeWithDevTools());
+const rootReducer = combineReducers({
+  switchScreen: switchScreenReducer,
+  showError: showErrorReducer,
+
+});
+
+const store = createStore(rootReducer, composeWithDevTools());
 
 export default store;
