@@ -1,4 +1,4 @@
-import { InputTypes } from '../types';
+import { InputTypes } from '../assets/types';
 import styles from '../styles/Input.module.css';
 
 export default function Input({

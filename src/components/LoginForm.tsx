@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Input from './Input';
 import styles from '../styles/LoginForm.module.css';
 import Button from './Button';
-import { users } from '../userList';
+import { users } from '../assets/userList';
 
 export default function LoginForm() {
   const navigate = useNavigate();

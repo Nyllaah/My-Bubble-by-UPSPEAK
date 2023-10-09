@@ -3,7 +3,7 @@ import LoginForm from '../components/LoginForm';
 import LoginSwitch from '../components/LoginSwitch';
 import SignInForm from '../components/SignInForm';
 import styles from '../styles/Login.module.css';
-import { SwitchScreenType } from '../types';
+import { SwitchScreenType } from '../assets/types';
 
 export default function Login() {
   const currScreen = useSelector(

@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import Button from './Button';
 import Input from './Input';
 import styles from '../styles/SignInForm.module.css';
-import { countryCodes } from '../country-codes';
-import { FormDataTypes } from '../types';
+import { countryCodes } from '../assets/country-codes';
+import { FormDataTypes } from '../assets/types';
 
 export default function SignInForm() {
   const navigate = useNavigate();
